@@ -1,0 +1,17 @@
+#Create your own adventure game. Choice number 1. The lowercase at the end is to help if the person enters "right" or "Right" by making it uniform no matter what.
+choice1 = input('You arrive at a fork in the road. Which way do you choose? Please type "Left" or "Right".\n').lower()
+
+if choice1 == 'right':
+  print("You turn right and immediately get hit by a bus. Game over.")
+elif choice1 == 'left':
+  choice2 = input('You take a left and walk down the path, eventually arriving at a river. Do you swim across or try to build a raft? Please type "Swim" or "Raft".\n').lower()
+  if choice2 == 'swim':
+    print("You try to swim across the river but get your booty cheeks eaten by dumptruck hungry sharks. Game over.")
+  elif choice2 == 'raft':
+    choice3 = input('You successfully build a raft and cruise across the river. Waving at the fish that want to munch on your booty cheeks. You then see three treasure chests, but you can only open one. Which color chest do you choose? Please type "Purple", "Blue", or "Green".\n').lower()
+    if choice3 == 'purple':
+      print('You open the purple chest to find a lit stick of dynamite and you explode. Game over')
+    elif choice3 == 'blue':
+      print('You open the blue chest only to be sucker punched in the back of the head by Christine from Selling Sunset and she steals the treasure and runs off because she sucks. Game over.')
+    elif choice3 == 'green':
+      print('You found the treasure and now get to be Bryant\'s sugar mama! Woohoo!')
